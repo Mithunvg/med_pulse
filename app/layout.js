@@ -6,7 +6,11 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import { Toaster } from "sonner";
 
-const inter =Inter({subset:["latin"]});
+const inter =Inter(
+  {subset:["latin"]
+   preload:true
+  }
+);
 
 export const metadata = {
   title: "medpulse - Doctors Appoinment App",
