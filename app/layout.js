@@ -7,7 +7,7 @@ import { dark } from "@clerk/themes";
 import { Toaster } from "sonner";
 
 const inter =Inter(
-  {subsets:["latin"]
+  {subsets:["latin"],
    preload:true,
   }
 );
