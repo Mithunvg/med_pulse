@@ -1,0 +1,50 @@
+import { Badge } from "@/components/ui/badge";
+import Pricing from "@/components/ui/pricing";
+import { ArrowLeft } from "lucide-react";
+import Link from "next/link";
+import React from "react";
+
+const PricingPage = ()=>{
+    return ( 
+        <div className="container mx-auto px-4 py-12">
+            <div className="flex justify-start mb-2">
+                <Link
+                href="/"
+                className="flex items-center text-muted-foreground hover:text-white transition-colors"
+                >
+                <ArrowLeft className="h-4 w-4 mr-2" />
+                Back to Home
+                </Link> 
+
+            </div>
+            <div className="max-w-full mx-auto mb-12 text-center">
+                <Badge 
+                varient="outline"
+                className="bg-emerald-900/30 border-emerald-700/30 px-4 py-1 text-emerald-400 text-sm-font-medium mb-4">
+                    Affordable HealthCare
+                </Badge>
+            <h1 className="text-4xl md:text-5xl font-bold gradient-title mb-4"> 
+                Simple,Trustworthy Pricing
+            </h1>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          Pick the perfect plan for your healthcare needs with clear pricing—no hidden fees and no long-term commitments
+        </p>
+
+
+            </div>
+            <Pricing />
+             {/* FAQ Section - Optional */}
+      <div className="max-w-3xl mx-auto mt-16 text-center">
+        <h2 className="text-2xl font-bold text-white mb-2">
+          Questions? We're Here to Help
+        </h2>
+        <p className="text-muted-foreground mb-4">
+          Contact our support team at vgmithun21@gmail.com
+        </p>
+      </div>
+
+
+        </div>
+    );
+};
+export default PricingPage;
